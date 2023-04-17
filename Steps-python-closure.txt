@@ -1,0 +1,12 @@
+Download source .tar.gz into the SOURCES folder
+
+[soumil@fedora SPECS]$ pyp2rpm closure
+
+It does not create spec file, instead writes the contents of the spec file in the terminal.
+Create a blank spec file named python-closure.spec & Copy paste the terminal contents into it.
+
+[soumil@fedora SPECS]$ rpmbuild -ba python-closure.spec
+...
+[soumil@fedora SPECS]$ cd
+[soumil@fedora ~]$ cd rpmbuild/RPMS/noarch
+[soumil@fedora noarch]$ sudo dnf install python3-closure-20191111-1.fc36.noarch.rpm
